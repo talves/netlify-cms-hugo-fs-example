@@ -1,0 +1,9 @@
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>{{ block "title" . }}{{ .Site.Title }} {{ with .Title }} | {{ . }}{{ end }}{{ end }}</title>
+  </head>
+  <body>
+    {{ block "main" . }}{{ end }}
+  </body>
+</html>

@@ -1,0 +1,9 @@
+{{ .Content }}
+
+{{ if eq .Kind "home" }}
+  {{ range where .Site.Pages "Section" "posts" }}
+    {{ if .IsPage }}{{ partial "item" . }}{{ end }}
+  {{ end }}
+{{ else }}
+  {{ partial "item-list" . }}
+{{ end }}
