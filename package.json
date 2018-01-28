@@ -8,6 +8,7 @@
   "license": "MIT",
   "scripts": {
     "start": "webpack-dev-server -d --config webpack.config.js",
+    "start:hugo": "hugo server -p 8090",
     "build": "hugo",
     "build:dev": "hugo -d example"
   },
